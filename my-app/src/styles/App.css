@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.tostyle {
+    display: flex;
+}
+
+.wrapper {
+    background-color: #28293E;
+    padding: 16px 0 58px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 300;
+    padding-top: 93px;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.linecontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headercontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header {
+    color: #ffffff;
+}
+
+.menucontent:not(:last-child) {
+    margin-right: 90px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 570px;
+    text-align: center;
+    color: #707070;
+}
+
+.btncontact {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: 1px solid #707070;
+    border-radius: 6px;
+}
+
+@media (max-width: 1040px) {
+    .tostyle {
+        display: none;
+    }
+    
+    .btncontact {
+        display: none;
+    }
+
+    .linecontent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+    .content {
+        height: 100vh;
+        background-color: #FDF0E9;
+    }
+
+    .buttontable {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+    
+    .contenttabs:not(:last-child){
+        margin-right: 65px;
+    }
+
+    .content {
+        padding-top: 80px;
+    }
+
+    .imageall {
+        max-width: 370px;
+        border-radius: 5px;
+        
+    }
+
+    .containerimage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-Item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .content-Item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-widht: 1920px) {
+        .container {
+            width: 1500px;
+        }
+        
+        .content-Item:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
