@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    background-color: #fdf0e9;
+}
 
 ul li {
     list-style: none;
@@ -13,15 +16,19 @@ ul li {
 }
 
 .wrapper {
-    background-color: #28293E;
+    background-color: #28293e;
     padding: 16px 0 58px 0;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -41,7 +48,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
 }
 
 .headercontent {
@@ -77,11 +84,61 @@ a {
     border-radius: 6px;
 }
 
+.contenttabs {
+    cursor: pointer;
+    transition: .3s ease-in;
+
+}
+
+.contenttabs:hover, .contenttabs.active{
+    color: green;
+
+}
+.content {
+    height: 100vh;
+}
+
+.buttontable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+    gap: 10px;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+
+.containerimage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.more__img__btn {
+    margin: 1rem 0;
+    background-color:  blueviolet;
+    border-radius: .5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
 @media (max-width: 1040px) {
+    .buttontable {
+        display: none;
+    }
+    .containerimage {
+        grid-template-columns: 1fr;
+    
+
+    }
     .tostyle {
         display: none;
     }
-    
+
     .btncontact {
         display: none;
     }
@@ -92,53 +149,9 @@ a {
         justify-content: center;
     }
 }
-
-    .content {
-        height: 100vh;
-        background-color: #FDF0E9;
-    }
-
-    .buttontable {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 75px;
-    }
-    
-    .contenttabs:not(:last-child){
-        margin-right: 65px;
-    }
-
-    .content {
-        padding-top: 80px;
-    }
-
-    .imageall {
-        max-width: 370px;
-        border-radius: 5px;
-        
-    }
+@media (min-width: 1920px) {
 
     .containerimage {
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(4,1fr);
     }
-
-    .content-Item:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .content-Item {
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
-
-    @media (max-widht: 1920px) {
-        .container {
-            width: 1500px;
-        }
-        
-        .content-Item:nth-child(4n) {
-            margin-right: 0;
-        }
-    }
+}

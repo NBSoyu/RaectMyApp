@@ -1,0 +1,18 @@
+.select__choose {
+    cursor: pointer;
+height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    background-color: white;
+    border-bottom: 2px solid #f3d1bf;;
+
+}
+
+.select__choose:last-child {
+    border-radius: 0 0 8px 8px;
+}
+.select__choose:first-child {
+    border-radius:  8px 8px 0 0;
+}

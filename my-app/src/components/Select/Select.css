@@ -1,0 +1,30 @@
+.select,
+.select__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select {
+    cursor: pointer;
+    width: 30%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 2px solid #f3d1bf;
+    transition: 0.5s all;
+    position: relative;
+    color: #391400;
+    margin-bottom: 3rem;
+}
+
+.select__inner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+@media(min-width: 1040px){
+.select {
+    display: none;
+}
+}

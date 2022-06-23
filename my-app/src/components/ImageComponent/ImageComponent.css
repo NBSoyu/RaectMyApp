@@ -1,0 +1,9 @@
+
+.imageall {
+    max-width: 100%;
+    border-radius: 5px;
+    border:6px solid transparent;
+}
+.imageall.active {
+    border:6px solid green;
+}
